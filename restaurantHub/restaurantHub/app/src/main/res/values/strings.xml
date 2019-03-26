@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">Resturant Hub</string>
+    <string name="hello">Hello there!\nWelcome Back</string>
+    <string name="rupee_symbol">$$$</string>
+    <string name="dummy_restaurent_place">restaurent</string>
+    <string name="location">Location</string>
+    <string name="dummy_restaurent_name">Sample</string>
+    <string name="book_now">Book Now</string>
+    <string name="rs">Rs</string>
+    <string name="password">Password</string>
+    <string name="email">Email Address</string>
+    <string name="sign_in">Login</string>
+    <string name="register">Register</string>
+    <string name="forgot_password">Forgot password ?</string>
+    <string name="please_wait">Please wait</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="full_name">Full Name</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="email_id">Email ID</string>
+    <string name="label_forgot_password_auth_activity">Enter your email address and we’ll send you\ninstructions to reset your password.</string>
+    <string name="confirm_password">Confirm New Password</string>
+    <string name="reset">Reset</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="send_verification_code">SEND VERIFICATION CODE</string>
+    <string name="verify">Verify</string>
+    <string name="resend">Resend Code</string>
+    <string name="otp">OTP</string>
+    <string name="codemsg">Didn\'t Receive the OTP?</string>
+
+    <string name="error_view_oops">Oops</string>
+    <string name="error_view_retry">TRY AGAIN</string>
+    <string name="no_internet">No Internet Connection !</string>
+
+
+    <string name="label_account_page_logout">Log out</string>
+    <string name="my_account">Account</string>
+    <string name="change_password">Change Password</string>
+    <string name="logout">Do you want to logout ?</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="table_size">Table Size</string>
+    <string name="next">Next</string>
+    <string name="done">Done</string>
+    <string name="meta_movie_home_tab_highlight_start_x">meta_movie_home_tab_highlight_start_x</string>
+    <string name="search">Search</string>
+    <string name="new_password">New Password</string>
+    <string name="current_password">Current Password</string>
+    <string name="my_bookings">Bookings</string>
+    <string name="share">Share</string>
+
+    <string name="share_app">Hey check out the amazing app at :https://play.google.com/store/</string>
+    <string name="restaurant">dineout</string>
+    <string name="submit">Submit</string>
+
+    <string name="dummy_content">Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,</string>
+    <string name="home">Home</string>
+
+</resources>

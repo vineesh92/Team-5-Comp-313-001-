@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_error_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pageColorWhite"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:clickable="true"
+    tools:ignore="Overdraw"
+    android:focusable="true">
+
+    <LinearLayout
+        android:id="@+id/container_error_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:id="@+id/ev_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            app:srcCompat="@drawable/ic_error_cloud" />
+
+        <TextView
+            android:id="@+id/ev_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/error_view_oops"
+            android:textColor="@color/textColorBlack"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/ev_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:gravity="center_horizontal"
+            android:text="No Internet Connection !"
+            android:textColor="@color/textColorBlack"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/ev_retry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_wallet_button_dark_accent"
+            android:padding="8dp"
+            android:text="@string/error_view_retry"
+            android:textColor="@color/textColorWhite"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>
+

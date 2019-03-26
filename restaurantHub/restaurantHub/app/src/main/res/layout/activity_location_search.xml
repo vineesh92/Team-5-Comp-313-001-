@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pageBackgroundColor"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:ignore="Overdraw">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:background="@color/appThemeColor"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:titleTextColor="@color/textColor">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="5dp"
+            tools:ignore="RtlSymmetry,UseCompoundDrawables">
+
+
+            <ImageView
+                android:id="@+id/toolbar_navigation_icon"
+                android:layout_width="20dp"
+                android:layout_height="25dp"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="7dp"
+                android:contentDescription="@string/app_name"
+                android:visibility="visible"
+                app:srcCompat="@drawable/ic_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/sf_pro_regular"
+                android:text="@string/location"
+                android:textColor="@color/textColor"
+                android:textSize="17sp" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/relayoutSourceLocationInput"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/rounded_rectangle"
+        android:elevation="5dp"
+        tools:ignore="UselessParent">
+
+
+        <LinearLayout
+            android:id="@+id/locationPinView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:gravity="center">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/ic_search"
+                tools:ignore="ContentDescription" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/ipEditTextSourceLocation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="4dp"
+            android:layout_toEndOf="@+id/locationPinView"
+            android:background="@null"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:hint="@string/search"
+            android:imeOptions="actionDone"
+            android:inputType="textPostalAddress"
+            android:lines="1"
+            android:maxLines="1"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            tools:ignore="RtlSymmetry" />
+
+
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:layout_alignBottom="@+id/sourceLocationInputWrapper"-->
+        <!--android:background="#29343f" />-->
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relayoutSourceLocationInput"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp">
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:visibility="gone" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerViewPlaceSuggestions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="2dp"
+            android:background="#ffffff" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="No Result found"
+            android:textColor="@color/textColor"
+            android:visibility="gone"
+            tools:ignore="HardcodedText" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

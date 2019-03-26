@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="IconLauncherShape">
+        <ignore path="src/main/res/mipmap-xxxhdpi/ic_launcher.png" />
+    </issue>
+    <issue id="IconLocation">
+        <ignore path="src/main/res/drawable/edit_icon_profile.png" />
+        <ignore path="src/main/res/drawable/error_view_cloud.png" />
+        <ignore path="src/main/res/drawable/ic_placeholder.png" />
+        <ignore path="src/main/res/drawable/img_restaurant_no_image.png" />
+        <ignore path="src/main/res/drawable/img_restaurant_place_holder_image.png" />
+        <ignore path="src/main/res/drawable/numberofpeople.png" />
+    </issue>
+</lint>

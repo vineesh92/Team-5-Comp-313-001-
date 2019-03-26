@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.restaurants.MainRestaurantListingActivity">
+
+    <LinearLayout
+        android:id="@+id/linear_layout_progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/pageColorWhite"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:theme="@style/splashProgressBar" />
+    </LinearLayout>
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/pageColorWhite"
+        app:elevation="0dp">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:titleEnabled="false">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/appThemeColor"
+                android:elevation="4dp"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:contentInsetLeft="0dp"
+                app:contentInsetStart="0dp"
+                app:titleTextColor="@android:color/white"
+                tools:targetApi="lollipop">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/title_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/raleway_bold"
+                        android:text="@string/restaurant"
+                        android:textColor="@color/textColor"
+                        android:textSize="26sp" />
+                </RelativeLayout>
+
+
+            </android.support.v7.widget.Toolbar>
+
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="27dp"
+                android:background="@color/appThemeColor" />
+
+            <RelativeLayout
+                android:id="@+id/relayoutSourceLocationInput"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/rounded_rectangle"
+                android:elevation="5dp"
+                android:visibility="visible">
+
+
+                <LinearLayout
+                    android:id="@+id/locationPinView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:gravity="center">
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/ic_search"
+                        tools:ignore="ContentDescription" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/restaurentSearchEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toEndOf="@+id/locationPinView"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:focusableInTouchMode="false"
+                    android:fontFamily="@font/sf_pro_light"
+                    android:gravity="center_vertical"
+                    android:hint="@string/search"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:paddingStart="6dp"
+                    android:singleLine="true"
+                    android:textColor="#000000"
+                    android:textColorHint="#8E8E93"
+                    android:textSize="@dimen/text_size_new_form"
+                    android:visibility="visible"
+                    tools:ignore="RtlSymmetry" />
+
+
+            </RelativeLayout>
+
+        </FrameLayout>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scrollView_restaurantListing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:id="@+id/layout_restaurant_listing"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/pageColorWhite"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/sf_pro_semi_bold"
+                android:text="Featured"
+                android:textColor="@color/textColorBlack"
+                android:textSize="@dimen/text_size_new_medium" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_featured_items"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:nestedScrollingEnabled="false"
+                android:orientation="horizontal"
+                tools:targetApi="lollipop" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="26dp"
+                android:fontFamily="@font/sf_pro_semi_bold"
+                android:text="Picks for you"
+                android:textColor="@color/textColorBlack"
+                android:textSize="@dimen/text_size_new_medium" />
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view_restaurant_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="14dp" />
+
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/textColor"
+        app:itemTextColor="@color/bottom_bar_icon_color_selector"
+        app:menu="@menu/navigation" />
+
+</android.support.design.widget.CoordinatorLayout>

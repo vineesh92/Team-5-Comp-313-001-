@@ -1,0 +1,174 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pageBackgroundColor"
+    android:orientation="vertical"
+    tools:ignore="Overdraw">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="142dp"
+                    android:layout_height="84dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@mipmap/ic_launcher" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium"
+                android:gravity="center"
+                android:text="@string/app_name"
+                android:textAllCaps="true"
+                android:textColor="@color/textColor"
+                android:textSize="18sp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/text_size_small"
+                    android:gravity="center"
+                    android:text="@string/label_forgot_password_auth_activity"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/text_size_normal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:height="40dp"
+                    android:hint="@string/email_id"
+                    android:inputType="none" />
+                <!--</android.support.design.widget.TextInputLayout>-->
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sf_pro_medium"
+                android:text="Enter OTP"
+                android:textColor="@color/textColorBlack"
+                android:textSize="22sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/otpTextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/ratingColor"
+                    android:theme="@style/TextLabel">
+
+                    <EditText
+                        android:id="@+id/edtOtp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/otp"
+                        android:inputType="number"
+                        android:paddingTop="10dp"
+                        android:textColor="@color/textColorBlack"
+                        android:textColorHighlight="@color/textColorBlack"
+                        android:textCursorDrawable="@drawable/color_cursor"
+                        android:textSize="@dimen/text_size_new_form" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/btnVerifyOtpView"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/bg_wallet_button_dark_accent"
+                    android:gravity="center"
+                    android:text="@string/verify"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/sf_pro_regular"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/text_size_new_medium" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/codemsg"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/sf_pro_regular"
+                    android:textColor="@color/ratingColor"
+                    android:textSize="@dimen/text_size_small" />
+                <TextView
+                    android:id="@+id/btnVerifyOtpResent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/resend"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/sf_pro_regular"
+                    android:textColor="@color/appThemeColor"
+                    android:textSize="@dimen/text_size_new_medium" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

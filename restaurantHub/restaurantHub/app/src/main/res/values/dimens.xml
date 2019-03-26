@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_size_micro">9sp</dimen>
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="text_size_normal">12sp</dimen>
+    <dimen name="text_size_new_form">16sp</dimen>
+    <dimen name="text_size_new_medium">16sp</dimen>
+    <dimen name="text_size_large">22sp</dimen>
+    <dimen name="text_size_medium">20sp</dimen>
+    <dimen name="text_size_extra_large">22sp</dimen>
+
+
+    <dimen name="restaurent_booking_option_fragment_date_number_width">60dp</dimen>
+    <dimen name="restaurent_booking_option_fragment_date_year_width">60dp</dimen>
+
+
+    <!--Restaurent home page-->
+
+    <!--Restaurent page-->
+    <dimen name="restaurant_details_viewpager_details_image_height">263dp</dimen>
+    <dimen name="restaurant_details_viewpager_details_image_min_height">60dp</dimen>
+    <dimen name="restaurant_details_textview_count_bottom">14dp</dimen>
+    <dimen name="restaurant_details_textview_count_end">13dp</dimen>
+    <dimen name="restaurant_details_textview_count_padding_bottom">7dp</dimen>
+    <dimen name="restaurant_details_textview_count_padding_start">7dp</dimen>
+    <dimen name="restaurant_details_textview_count_padding_top">5dp</dimen>
+    <dimen name="restaurant_details_imageview_details_image_height">263dp</dimen>
+    <dimen name="restaurant_details_relayout_toolbar_height">45dp</dimen>
+    <dimen name="restaurant_details_textview_restaurant_name_width">15dp</dimen>
+    <dimen name="restaurant_details_textview_restaurant_name_top">13dp</dimen>
+    <dimen name="restaurant_details_restaurant_location_start">15dp</dimen>
+    <dimen name="restaurant_details_restaurant_location_top">6dp</dimen>
+    <dimen name="restaurant_details_textview_restaurant_details_type_start">15dp</dimen>
+    <dimen name="restaurant_details_textview_restaurant_details_text_end">24dp</dimen>
+    <dimen name="restaurant_details_textview_restaurant_details_text_start">15dp</dimen>
+    <dimen name="restaurant_details_imageview_restaurant_book_icon_top">24dp</dimen>
+    <dimen name="restaurant_details_button_book_now_height">52dp</dimen>
+    <dimen name="restaurant_options_relayout_tab_parent_container_height">32dp</dimen>
+    <dimen name="restaurant_options_linearlayout_tab_container_height">32dp</dimen>
+    <dimen name="restaurant_options_imageview_tab_date_width">17dp</dimen>
+    <dimen name="restaurant_options_imageview_tab_date_end">14dp</dimen>
+    <dimen name="restaurant_options_relayout_tab_people_width">17dp</dimen>
+    <dimen name="restaurant_options_relayout_tab_people_height">17dp</dimen>
+    <dimen name="restaurant_options_relayout_tab_people_end">14dp</dimen>
+    <dimen name="restaurant_options_imageview_tab_time_end">14dp</dimen>
+    <dimen name="restaurant_options_view_pager_booking_details_height">190dp</dimen>
+    <dimen name="restaurant_options_viewpager_booking_details_bottom">30dp</dimen>
+    <dimen name="restaurant_options_button_next_end">7dp</dimen>
+    <dimen name="restaurant_options_button_next_start">7dp</dimen>
+    <dimen name="restaurant_details_textview_restaurant_rate_top">6dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="default_thickness">2dp</dimen>
+    <dimen name="default_inner_padding">8dp</dimen>
+    <dimen name="radius_button">2dp</dimen>
+    <dimen name="restaurant_page_dialog_width">400dp</dimen>
+    <integer name="default_anim_duration">3000</integer>
+    <integer name="default_anim_step">3</integer>
+    <integer name="default_start_angle">-90</integer>
+
+
+</resources>

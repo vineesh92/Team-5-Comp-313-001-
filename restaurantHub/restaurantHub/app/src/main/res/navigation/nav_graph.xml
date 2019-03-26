@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashActivity">
+
+    <activity
+        android:id="@+id/splashActivity"
+        android:name="com.restaurant.group.restauranthub.ui.splash.SplashActivity"
+        android:label="activity_splash"
+        tools:layout="@layout/activity_splash" />
+    <activity
+        android:id="@+id/loginOrRegisterActivity"
+        android:name="com.restaurant.group.restauranthub.ui.login_or_register.LoginOrRegisterActivity"
+        android:label="activity_login_or_register"
+        tools:layout="@layout/activity_login_or_register" />
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="com.restaurant.group.restauranthub.ui.login.LoginActivity"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login" />
+    <activity
+        android:id="@+id/registerActivity"
+        android:name="com.restaurant.group.restauranthub.ui.register.RegisterActivity"
+        android:label="activity_register"
+        tools:layout="@layout/activity_register" />
+    <activity
+        android:id="@+id/forgotPassWordActivity"
+        android:name="com.restaurant.group.restauranthub.ui.forgot_password.ForgotPassWordActivity"
+        android:label="activity_forgot_password"
+        tools:layout="@layout/activity_forgot_password" />
+    <activity
+        android:id="@+id/mainRestaurantListingActivity"
+        android:name="com.restaurant.group.restauranthub.ui.restaurants.MainRestaurantListingActivity"
+        android:label="activity_restaurant_listing"
+        tools:layout="@layout/activity_restaurant_listing" />
+</navigation>

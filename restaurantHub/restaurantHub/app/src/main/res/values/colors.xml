@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0F151B</color>
+    <color name="colorPrimaryDark">#EA3A47</color>
+    <color name="colorAccent">#EA3A47</color>
+    <color name="pageBackgroundColor">#FFFFFF</color>
+    <color name="textColorBlack">#000000</color>
+    <color name="textColorWhite">#ffffff</color>
+    <color name="textColor">#ffffff</color>
+    <color name="ratingColor">#8A8A8F</color>
+    <color name="transparentColor">#00000000</color>
+    <color name="black_effective">#2a2a2a</color>
+    <color name="appThemeColor">#EA3A47</color>
+    <color name="pageColorWhite">#ffffff</color>
+
+
+    <color name="error_view_title">#FFFFFF</color>
+    <color name="error_view_subtitle">#FFFFFF</color>
+    <color name="error_view_retry">#FFFFFF</color>
+
+</resources>
